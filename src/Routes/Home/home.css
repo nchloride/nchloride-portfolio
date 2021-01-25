@@ -1,0 +1,219 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .home h1 {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+} */
+/* Home Introduction */
+.home__intro{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    justify-content: space-evenly;
+    background-color: gray;
+    width: 100%;
+}
+.tagLines{
+    display: flex;
+    flex-direction: column;
+}
+.tagline{
+    font-family: 'Bebas Neue', cursive;
+    color: whitesmoke;
+    text-shadow: 5px 1px black;
+    font-size:3rem;
+}
+.home__intro > img {
+    border-radius: 50%;
+    border: 20px solid black;
+    height: minmax(200px,500px);
+    object-fit: contain;
+    width: 500px;
+}
+@media screen and (max-width:900px){
+    .home__intro{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .tagline{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home__intro>img{
+        width: 80%;
+    }
+}
+/* Timeline */
+.home__timeline_title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    margin: 50px;
+
+}
+.home__timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    width: 5px;
+    margin: 50px;
+}
+.timeline{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 400px;
+}
+.timeline:nth-child(even){
+    flex-direction: row-reverse;
+    position: relative;
+    right: 8500%;
+  
+}
+.timeline:nth-child(even) > .timeline__dot{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid rgb(123, 123, 123);
+    border-bottom: 10px solid transparent;
+    border-right:none
+}
+.timeline:nth-child(even) .timeline__record h1{
+    text-align: end;
+}
+.timeline__record{
+   border: 10px solid gray;
+   background-color: gray;
+   width: 400px;
+   padding: 20px;
+}
+.timeline__record h1{
+    border-bottom: 1px solid black;
+    text-shadow: 4px 1px black;
+    font-size: 3rem;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+}
+.timeline__record p {
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+.timeline__dot{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid rgb(123, 123, 123);
+    border-bottom: 10px solid transparent;
+}
+.home__timeline_title{
+    text-align: center;
+    font-size: 4rem;
+}
+@media screen and (max-width:1000px){
+    .timeline:nth-child(even){
+        flex-direction: row;
+        right:0;
+    }
+    .timeline:nth-child(even) .timeline__dot{
+        border-left: none;
+    }
+    .timeline:nth-child(even) .timeline__dot:nth-child(1){
+        display: block;
+        border-right: 20px solid rgb(123, 123, 123);
+        border-left: none;
+    }
+    .timeline:nth-child(even) .timeline__dot:nth-child(3){
+        display: none;
+    }
+    .timeline{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+        margin-bottom: 20px;
+    }
+    .timeline__record > .timeline__dot{
+        display: none;
+    }
+    .timeline:nth-child(even) .timeline__record h1{
+        text-align: center;
+    }
+    .home__timeline{
+        width: 100%;
+        background-color: transparent;
+    }
+}
+/* Miscellaneous */
+.home__misc{
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+.home_misc_title{
+    font-size: 5rem;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 5px 1px black ;
+}
+.misc__services{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,400px));
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service{
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5pt 1pt black;
+    padding: 10px;
+    height: 300px;
+    background-color:rgba(0,0,0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service>img{
+    width: 150px;
+    align-self: center;
+    background-color:whitesmoke;
+    padding: 20px;
+    outline: transparent;
+    border-radius: 10%;
+}
+.service h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+.service p {
+    font-family: 'Teko', sans-serif;
+}
+@media screen and (max-width:400px){
+    .home_misc_title{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .service>img{
+        width: 100px;
+    }
+    .service{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
