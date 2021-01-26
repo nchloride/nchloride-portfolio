@@ -8,7 +8,7 @@ import iloveyou from "./soundFX/iloveyou.m4a";
 
 
 const HomeIntroduction = () => {
-    const soundClip = [,donttouchme,iloveyou];
+    const soundClip = ['',donttouchme,iloveyou];
     const [randomNumber,setRandomNumber] = useState(1);
     const [play] = useSound(soundClip[randomNumber]);
 

@@ -6,6 +6,7 @@ import "./App.css";
 import {motion,AnimatePresence} from "framer-motion";
 import Projects from "./Routes/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
+import Contact from "./Routes/Contacts/Contact";
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/" exact children={<Home />}/>
               <Route path="/about" children={<About />}/>
               <Route path="/projects" children={<Projects/>}/>
+              <Route path="/contact" children={<Contact/>}/>
             </Switch>
         <Footer/>
     </div>

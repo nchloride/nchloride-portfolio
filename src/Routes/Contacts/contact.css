@@ -1,0 +1,34 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    color: white;
+    background-color:gray;
+}
+.contact > h1{
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 4px 1px black ;
+    font-size: 3rem;
+}
+.contact__links{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.link__logo{
+    display: flex;
+    align-items: flex-end;
+    color: black;
+    color: white;
+ 
+}
+.link__logo > img{
+    width: 50px;
+    height: 50px;
+}
+.link__logo >p{
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;  font-family: 'Teko', sans-serif;
+}
