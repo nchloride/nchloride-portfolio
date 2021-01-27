@@ -4,8 +4,7 @@ import {motion} from "framer-motion";
 import chorvald from "../../Components/pictures/ChorVald.jpg";
 import donttouchme from "./soundFX/donttouchme.m4a";
 import iloveyou from "./soundFX/iloveyou.m4a";
-
-
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 const HomeIntroduction = () => {
     const soundClip = ['',donttouchme,iloveyou];
@@ -19,13 +18,14 @@ const HomeIntroduction = () => {
     }
 
     return (
-        <section className="home__intro">
-            <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}} src={chorvald}></motion.img>
-            <div className="tagLines">
-                {tagLines.map((tagLine,index)=><TagLineContainer tagLine={tagLine} delay={index} key={index}/>)}
-            </div>
-           
-        </section>
+        <>
+            <section className="home__intro">
+                    <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}} src={chorvald}></motion.img>
+                    <div className="tagLines">
+                        {tagLines.map((tagLine,index)=><TagLineContainer tagLine={tagLine} delay={index} key={index}/>)}
+                    </div>
+            </section>
+        </>
     )
 }
 const TagLineContainer = ({tagLine,delay})=> {

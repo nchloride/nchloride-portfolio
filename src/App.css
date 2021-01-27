@@ -11,8 +11,26 @@ html{
 .App{
 }
 ::-webkit-scrollbar{
-  background-color: gray;
+  background-color: black;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: black;
+  background: rgb(185, 185, 185);
+  /* border-radius: 10px 10px; */
+}
+::-webkit-scrollbar-button{
+  
+  border-bottom: 20px solid white;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent; 
+}
+::-webkit-scrollbar-button:single-button:vertical:increment{
+  border-top: 20px solid white;
+  border-bottom: none;
+
+}
+::-webkit-scrollbar-button:active{
+  border-bottom: 20px solid rgb(126, 126, 126);
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:active{
+  border-top: 20px solid rgb(126, 126, 126);
 }

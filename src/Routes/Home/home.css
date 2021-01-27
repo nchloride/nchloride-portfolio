@@ -13,7 +13,6 @@
 /* Home Introduction */
 .home__intro{
     display: flex;
-    
     align-items: center;
     justify-content: center;
     height: 90vh;
