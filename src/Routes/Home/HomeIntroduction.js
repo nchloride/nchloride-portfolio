@@ -4,14 +4,13 @@ import {motion} from "framer-motion";
 import chorvald from "../../Components/pictures/ChorVald.jpg";
 import donttouchme from "./soundFX/donttouchme.m4a";
 import iloveyou from "./soundFX/iloveyou.m4a";
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 const HomeIntroduction = () => {
     const soundClip = ['',donttouchme,iloveyou];
     const [randomNumber,setRandomNumber] = useState(1);
     const [play] = useSound(soundClip[randomNumber]);
 
-    const tagLines = ["Hello there! You are in my website","that means","I already know your personal information","Just kidding I'm dumb","GOOD DAY SIR!"];
+    const tagLines = ["Please!","do not ","hover your cursor","on my picture"];
     const onMouseEnter = () =>{
         play();
         setRandomNumber(Math.ceil(Math.random() *( soundClip.length)-1));
