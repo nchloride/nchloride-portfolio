@@ -2,18 +2,11 @@ import React from 'react';
 import {motion} from "framer-motion";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import css from "../../Components/Icon/css-3.svg";
-import html from "../../Components/Icon/html5.svg";
-import js from "../../Components/Icon/javascript.svg";
-import nodeJs from "../../Components/Icon/nodejs.svg";
-import react from "../../Components/Icon/react.svg";
-import mysql from "../../Components/Icon/mysql.svg";
-import mongodb from "../../Components/Icon/mongodb-ar21.svg";
-import csharp from "../../Components/Icon/hashtag.svg";
+import icons from "../../Components/Icon";
 import Icon  from "./Icon.js";
 import { Link } from 'react-router-dom';
 const AboutInformation = () => {
-    const icons = [css,html,js,nodeJs,react,mysql,mongodb,csharp];
+
     const variants={
         shrink:{scale:0},
         grow:{scale:1}

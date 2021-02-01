@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import { Link } from 'react-router-dom';
 import facebookLogo from "../../Components/ContactIcons/facebook.svg";
