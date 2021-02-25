@@ -19,7 +19,11 @@ const HomeIntroduction = () => {
     return (
         <>
             <section className="home__intro">
-                    <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}} src={chorvald}></motion.img>
+                    <div className="intro__picture">
+                        <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}} src={chorvald}></motion.img>
+                        <h1>Noel Carlo Lopez</h1>
+                        <h2>1999-????</h2>
+                    </div>
                     <div className="tagLines">
                         {tagLines.map((tagLine,index)=><TagLineContainer tagLine={tagLine} delay={index} key={index}/>)}
                     </div>
