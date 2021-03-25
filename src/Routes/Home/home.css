@@ -53,6 +53,7 @@
     font-size: 2rem;
     padding: 1rem;
     background-color: rgb(54, 54, 54);
+    transform-origin: top left;
 }
 .intro__picture>h1{
     color: white;
@@ -74,7 +75,7 @@
     width: 500px;
 }
 .image_hovered{
-    transform-origin: top left;
+    
     transition: .5s ease-out;
     transform: rotate(20deg);
 }
