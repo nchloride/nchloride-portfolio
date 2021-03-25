@@ -9,18 +9,19 @@ const HomeIntroduction = () => {
     const soundClip = ['',donttouchme,iloveyou];
     const [randomNumber,setRandomNumber] = useState(1);
     const [play] = useSound(soundClip[randomNumber]);
-
+    const [isBroken,setIsBroken] = useState(false);
     const tagLines = ["Please!","do not ","hover your cursor","on my picture"];
     const onMouseEnter = () =>{
         play();
         setRandomNumber(Math.ceil(Math.random() *( soundClip.length)-1));
+        setIsBroken(true);
     }
 
     return (
         <>
             <section className="home__intro">
-                    <div className="intro__picture">
-                        <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}} src={chorvald}></motion.img>
+                    <div className={`intro__picture ${isBroken ? "image_hovered" : ""}`} >
+                        <motion.img onMouseEnter={onMouseEnter} animate={{rotate:360}}  src={chorvald}></motion.img>
                         <h1>Noel Carlo Lopez</h1>
                         <h2>1999-????</h2>
                     </div>
