@@ -1,5 +1,5 @@
 import NavBar from "./Components/NavigationBar/NavBar";
-import {BrowserRouter as Switch,Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch,Route} from "react-router-dom";
 import Home from "./Routes/Home/Home";
 import About from "./Routes/About/About";
 import "./App.css";
