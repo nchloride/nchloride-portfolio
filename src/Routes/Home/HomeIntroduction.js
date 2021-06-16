@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import useSound from "use-sound";
 import {motion} from "framer-motion";
 import chorvald from "../../Components/pictures/ChorVald.jpg";

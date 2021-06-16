@@ -1,9 +1,8 @@
 import NavBar from "./Components/NavigationBar/NavBar";
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import {BrowserRouter as Switch,Route} from "react-router-dom";
 import Home from "./Routes/Home/Home";
 import About from "./Routes/About/About";
 import "./App.css";
-import {motion,AnimatePresence} from "framer-motion";
 import Projects from "./Routes/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Routes/Contacts/Contact";

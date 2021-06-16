@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from 'react'
-import { Link } from 'react-router-dom';
 import facebookLogo from "../../Components/ContactIcons/facebook.svg";
 import twitterkLogo from "../../Components/ContactIcons/twitter.svg";
 import phoneLogo from "../../Components/ContactIcons/smartphone.svg";

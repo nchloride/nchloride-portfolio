@@ -1,4 +1,4 @@
-import React ,{useState}  from 'react'
+import React from 'react'
 import {motion,AnimateSharedLayout, AnimatePresence} from "framer-motion";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Me from "../../Components/pictures/me.jpg";
