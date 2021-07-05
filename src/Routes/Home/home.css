@@ -79,17 +79,21 @@
     transition: .5s ease-out;
     transform: rotate(20deg);
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:900px),(max-height:700px){
     .home__intro{
         flex-direction: column;
-        height: 100vh;
+        height: 110%;
     }
     .tagline{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
+    }
+    .intro__picture{
+        margin: 10px;
     }
     .intro__picture>img{
         width: 80%;
+        height: 80%;
     }
 }
 /* Timeline */
@@ -160,7 +164,9 @@
 }
 .home__timeline_title{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
+    background-color: rgba(214, 214, 214, 0.986);
+    padding: 20px;
 }
 @media screen and (max-width:1000px){
     .timeline:nth-child(even){
