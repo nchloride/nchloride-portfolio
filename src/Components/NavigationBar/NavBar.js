@@ -13,7 +13,7 @@ const NavBar = () => {
                 {pages.map((page,id)=>(<Link page={page.page} delay={page.delay} key={id}/>))}
                 </ul>
             </div>
-            <NavigationButton setNavOpen ={setNavOpen}/>
+            <NavigationButton setNavOpen ={setNavOpen} navOpen={navOpen}/>
         </>
     )
 }

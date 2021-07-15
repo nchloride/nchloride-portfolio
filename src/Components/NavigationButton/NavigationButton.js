@@ -1,6 +1,6 @@
 import React from 'react';
 import {motion} from "framer-motion";
-const NavigationButton = ({setNavOpen}) => {
+const NavigationButton = ({setNavOpen,navOpen}) => {
     const toggleNav = ()=> setNavOpen(prevData=>!prevData)
     return (
         <motion.button className="navigation__button"
@@ -11,9 +11,9 @@ const NavigationButton = ({setNavOpen}) => {
             right:10,
             bottom:10
         }} onClick={toggleNav}>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className={`line ${navOpen ? "line--transform":""}`}></div>
+            <div className={`line ${navOpen ? "line--transform":""}`}></div>
+            <div className={`line ${navOpen ? "line--transform":""}`}></div>
         </motion.button>
     )
 }
